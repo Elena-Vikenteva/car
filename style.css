@@ -282,7 +282,7 @@ header {
 .cont_coshial {
   display: flex;
   align-items: center;
-  margin-left: 10rem;
+  margin-left: 5rem;
 }
 
 .main_con {
@@ -623,62 +623,32 @@ header {
   color: #737373;
 }
 
-.hamburger {
-  position: fixed;
-  z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  padding: 4px;
-  border: black solid 1px;
-  background: white;
-  cursor: pointer;
-}
-
-.closeIcon {
-  display: none;
-}
-
-.menu {
-  position: fixed;
-  transform: translateY(-100%);
-  transition: transform 0.2s;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  background: black;
-  color: white;
-  list-style: none;
-  padding-top: 4rem;
-}
-
-.showMenu {
-  transform: translateY(0);
-}
-
-.cont_phone{
-  margin-left: 30rem;
-}
-
 @media only screen and (max-width: 1264px) {
   .wrapper {
-    max-width: 980px;
+    max-width: 950px;
     margin: auto;
   }
-.servise_card{
-  padding-top: 5rem;
-}
-  .servise_content{
-    margin-top: 0;
-  }
+
   .transport_content, .best_content {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
 
+  .servise_card {
+    padding-top: 5rem;
+  }
+
+  .servise_content {
+    margin-top: 3rem;
+  }
+
   .navigation {
     display: none;
+  }
+
+  .about_content_row {
+    max-width: 500px;
+    padding: 10px;
   }
 
   .im {
@@ -704,121 +674,80 @@ header {
   .dws-menu {
     display: none;
   }
+
+  .about_block img {
+    width: 950px;
+  }
 }
 @media only screen and (max-width: 980px) {
   .wrapper {
-    max-width: 880px;
+    max-width: 650px;
     margin: auto;
   }
-  .main_con{
-    flex-wrap: wrap;
-  }
+
   .servise_content, .contact_block {
     flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .con{
-   display: none;
-  }
-  .contact_bl{
-    margin-left: -3rem;
-    margin-top: 20px;
-  }
-  .footer_content{
-    flex-wrap: wrap;
-  }
-  .best_content_rowT, .bl{
-    margin-top: 5rem;
-  }
-  .im{
-    margin-top: 10rem;
-  }
-  .cont{
-    flex-wrap: wrap;
-  }
-  .cont img{
-    margin-left: 0;
-  }
-  .contact_social{
-    padding-bottom: 5rem;
-  }
-}
-
-
-
-@media only screen and (max-width: 880px) {
-  .wrapper {
-    max-width: 600px;
-    margin: auto;
-  }
-}
-
-
-@media only screen and (max-width: 500px) {
-  .wrapper {
-    max-width: 420px;
-    margin: auto;
-  }
-  .contact_bl{
-    margin-left: 0;
-  }
-  .logo img{
-    margin-left: 10px;
   }
 
-  h3{
-    font-size: 25px;
-  }
-.servise_title {
-  padding: 10px;
-}
-  .transport_card{
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-top: 0;
-  }
-  .servise_content{
-    justify-content: start;
-    padding-left: 3rem;
-  }
-  .cont{
-    padding: 5rem;
+  .servise_card {
+    width: 300px;
   }
 
   .footer_content {
     flex-wrap: wrap;
-  justify-content: center;
   }
-  .fooret_block{
-  max-width: 280px;
-     }
+
+  .contact_bl {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+  }
+
   .main_con {
+    margin-top: 8rem;
+  }
+
+  .best_content_row {
+    padding-bottom: 5rem;
+  }
+
+  .im {
+    margin-top: 5rem;
+  }
+
+  .cont {
     flex-wrap: wrap;
+    margin-bottom: 5rem;
+  }
+
+  .cont img {
+    margin-left: 0;
+  }
+
+  .about_block img {
+    width: 650px;
   }
 }
-
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .wrapper {
     max-width: 300px;
     margin: auto;
   }
-  .name, .email, .phone, .button_next{
-    margin-left: 5px;
-    width: 250px;
-  }
 
-  .contact_bl{
+  .transport_card img {
     max-width: 290px;
   }
-  .contact_form p{
-    margin-left: 5px;
-  }
-  .transport_card img{
-    max-width: 280px;
-  }
-  .im{
-    max-width: 280px;
+
+  .im {
+    display: none;
   }
 
+  .cont_coshial {
+    margin-top: 5rem;
+    margin-left: 0;
+  }
 }
+
 /*# sourceMappingURL=style.css.map */
